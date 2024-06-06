@@ -3,8 +3,13 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 7 * * *'
+
+permissions:
+  contents: write
+
 jobs:
   update:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
