@@ -43,6 +43,7 @@ updateInfo() {
 }
 
 (
+    force=${1:-no}
     nix flake update
 
     cd ./caddy-src || return
@@ -54,7 +55,7 @@ updateInfo() {
 
     new_hash="$(sha256sum ./go.sum)"
 
-    if [ "$old_hash" != "$new_hash" ]; then
+    if [ "$old_hash" != "$new_hash" ] || [ "$force" == "--force" ]; then
         updateInfo ""
         new_vendor_hash="$(nix build ../.# |& sed -n 's/.*got: *//p')"
 
