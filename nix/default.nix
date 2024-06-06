@@ -13,10 +13,13 @@
   caddy-version =  removePrefix "v" info.version;
   cloudflare-version-string = splitString "-" (removePrefix "v" info.cfVersion);
   cloudflare-version = elemAt cloudflare-version-string 0 + "+" + elemAt cloudflare-version-string 2;
+
+  ddns-version-string = splitString "-" (removePrefix "v" info.ddnsVersion);
+  ddns-version = elemAt ddns-version-string 0 + "+" + elemAt ddns-version-string 2;
 in
   buildGoModule {
     pname = "caddy-with-plugins";
-    version = caddy-version + "-" + cloudflare-version;
+    version = caddy-version + "-" + cloudflare-version + "-" + ddns-version;
 
     src = ../caddy-src;
 

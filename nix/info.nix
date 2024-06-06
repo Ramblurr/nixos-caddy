@@ -2,7 +2,7 @@
 {
   version = "v2.8.4";
   cfVersion = "v0.0.0-20240405130444-44030f9306f4";
-  vendorHash = "sha256-wo3fLg55ejLCLeIeaOw9dZIQUaBh0PGzJA6FuvOe640=";
+  vendorHash = "sha256-NmBuhJmNECiDHOcDoyaTnZdTQbBSTUMHwsL1DiXIG+s=";
   dist = {
     owner = "caddyserver";
     repo = "dist";
