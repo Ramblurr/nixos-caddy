@@ -3,7 +3,7 @@ module caddy
 go 1.22.3
 
 require (
-	github.com/caddy-dns/cloudflare v0.0.0-20240405130444-44030f9306f4
+	github.com/caddy-dns/cloudflare v0.0.0-20240610135444-d11ac0bfeab7
 	github.com/caddyserver/caddy/v2 v2.8.4
 	github.com/mholt/caddy-dynamicdns v0.0.0-20240522073026-012a1d434747
 )
@@ -67,7 +67,7 @@ require (
 	github.com/jackc/pgx/v4 v4.18.3 // indirect
 	github.com/klauspost/compress v1.17.8 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.7 // indirect
-	github.com/libdns/cloudflare v0.1.1 // indirect
+	github.com/libdns/cloudflare v0.0.0-20240604123710-0549667a10ab // indirect
 	github.com/libdns/libdns v0.2.2 // indirect
 	github.com/manifoldco/promptui v0.9.0 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
