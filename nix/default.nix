@@ -11,8 +11,7 @@
   dist = fetchFromGitHub info.dist;
 
   caddy-version =  removePrefix "v" info.version;
-  ovh-version-string = splitString "-" (removePrefix "v" info.ovhVersion);
-  ovh-version = elemAt ovh-version-string 0 + "+" + elemAt ovh-version-string 2;
+  ovh-version =  removePrefix "v" info.ovhVersion;
 
   ddns-version-string = splitString "-" (removePrefix "v" info.ddnsVersion);
   ddns-version = elemAt ddns-version-string 0 + "+" + elemAt ddns-version-string 2;
