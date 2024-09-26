@@ -3,7 +3,7 @@
   version = "v2.8.4";
   ovhVersion = "v0.0.3";
   ddnsVersion = "v0.0.0-20240710170124-d8dab1bbf3fc";
-  vendorHash = "";
+  vendorHash = "sha256-Ahayr5sKow1W3f2zdGg/ay9U/Otk90fk+dUlZvGf+sY=";
   dist = {
     owner = "caddyserver";
     repo = "dist";
