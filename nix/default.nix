@@ -11,15 +11,15 @@
   dist = fetchFromGitHub info.dist;
 
   caddy-version =  removePrefix "v" info.version;
-  cloudflare-version-string = splitString "-" (removePrefix "v" info.cfVersion);
-  cloudflare-version = elemAt cloudflare-version-string 0 + "+" + elemAt cloudflare-version-string 2;
+  ovh-version-string = splitString "-" (removePrefix "v" info.ovhVersion);
+  ovh-version = elemAt ovh-version-string 0 + "+" + elemAt ovh-version-string 2;
 
   ddns-version-string = splitString "-" (removePrefix "v" info.ddnsVersion);
   ddns-version = elemAt ddns-version-string 0 + "+" + elemAt ddns-version-string 2;
 in
   buildGoModule {
     pname = "caddy-with-plugins";
-    version = caddy-version + "-" + cloudflare-version + "-" + ddns-version;
+    version = caddy-version + "-" + ovh-version + "-" + ddns-version;
 
     src = ../caddy-src;
 
