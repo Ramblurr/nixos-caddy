@@ -5,7 +5,7 @@ go 1.26.4
 require (
 	github.com/caddy-dns/cloudflare v0.2.4
 	github.com/caddyserver/caddy/v2 v2.11.4
-	github.com/mholt/caddy-dynamicdns v0.0.0-20251231002810-1af4f8876598
+	github.com/mholt/caddy-dynamicdns v0.0.0-20260711161133-a5890c9df68c
 )
 
 require (

@@ -2,7 +2,7 @@
 {
   version = "v2.11.4";
   cfVersion = "v0.2.4";
-  ddnsVersion = "v0.0.0-20251231002810-1af4f8876598";
+  ddnsVersion = "v0.0.0-20260711161133-a5890c9df68c";
   vendorHash = "";
   dist = {
     owner = "caddyserver";
